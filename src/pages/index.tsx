@@ -105,7 +105,7 @@ export default function Home() {
                       Submit
                     </button>
                     <p className="font-medium text-gray-700 mt-3">
-                      {data?.result}
+                      {data?.message}
                     </p>
                   </form>
                 )}
