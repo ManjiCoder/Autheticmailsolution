@@ -11,6 +11,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "email-chk": "^1.0.2",
+    "email-exist": "^1.1.7",
     "formik": "^2.4.5",
     "next": "13.5.4",
     "react": "^18",
