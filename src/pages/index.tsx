@@ -7,7 +7,7 @@ import { Formik } from 'formik';
 
 import HeadSEO from '@/components/HeadSEO';
 import ErrorMessage from '@/components/ErrorMessage';
-import { BASE_URL, options } from '@/utils';
+import { BASE_URL } from '@/utils';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +19,7 @@ export default function Home() {
   const validateEmail = async (email: string) => {
     dispatch(setStatus(STATUSES.LOADING));
     let url = BASE_URL + `/api/email/${email}`;
-    let response = await fetch(url, options);
+    let response = await fetch(url);
     let data = await response.json();
     dispatch(setData(data));
     dispatch(setStatus(STATUSES.IDLE));
