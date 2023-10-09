@@ -7,7 +7,7 @@ import { Formik } from 'formik';
 
 import HeadSEO from '@/components/HeadSEO';
 import ErrorMessage from '@/components/ErrorMessage';
-import { BASE_URL } from '@/utils';
+import { BASE_URL, options } from '@/utils';
 
 const inter = Inter({ subsets: ['latin'] });
 
